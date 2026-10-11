@@ -1,0 +1,13 @@
+[package]
+name = "dillithium_lock"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ckb-std = "1.1"
+blake2b-ref = "0.3"
+fips204 = { version = "0.4", default-features = false, features = ["ml-dsa-65"] }
+
+[features]
+library = []
+native-simulator = ["library", "ckb-std/native-simulator"]
