@@ -1,0 +1,13 @@
+{
+  "cell_recipes": [
+    {
+      "name": "dillithium_lock",
+      "tx_hash": "0x30b3e40a54c5aef99eebdbe9d2438aa657402a7001cec5980e30fcf57eb562e3",
+      "index": 0,
+      "occupied_capacity": 10093400000000,
+      "data_hash": "0xaaa97f7ca549440211a861ea2b943d5c2ab4f7f10caf4a3cff4dd1eadd53cab5",
+      "type_id": "0x09f02f528b558a8d1f7cddef1074bae924eebf560ae3e85d5d1613df4be206b5"
+    }
+  ],
+  "dep_group_recipes": []
+}
