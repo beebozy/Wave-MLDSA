@@ -95,7 +95,7 @@ function Shell({ wallet, dep, setDep, client, onLock }: {
       {view === "home" && <Home address={address} balance={balance} price={price} tokens={tokens} hide={hide} error={error} onGo={go} />}
       {view === "activity" && <Activity address={address} />}
       {view === "settings" && <SettingsScreen hide={hide} onHide={setHidden} depStatus={depStatus} onGo={go} onLock={onLock} />}
-      {view === "send" && (<><ScreenHeader title="Send" onBack={() => setView("home")} /><div className="pad plain"><Send key={scanned} wallet={wallet} dep={dep} client={client} onSent={refresh} price={price?.usd ?? null} initialTo={scanned} /></div></>)}
+      {view === "send" && (<><ScreenHeader title="Send" onBack={() => setView("home")} /><div className="pad plain"><Send key={scanned} wallet={wallet} dep={dep} client={client} onSent={refresh} price={price?.usd ?? null}  /></div></>)}
       {view === "receive" && address && (<><ScreenHeader title="Receive" onBack={() => setView("home")} /><Receive address={address} /></>)}
       {view === "scan" && (<><ScreenHeader title="Scan address" onBack={() => setView("home")} /><Scan client={client} onAddress={(a) => { setScanned(a); setView("send"); }} /></>)}
       {view === "backup" && (<><ScreenHeader title="Recovery seed" onBack={() => setView("settings")} /><RevealSeed /></>)}

@@ -38,7 +38,7 @@ export function Create({ onCreated }: { onCreated: (w: WalletKeys, seedHex: stri
 
   return (
     <main className="narrow">
-      <h1>Lithium</h1>
+      <h1>Wave</h1>
       <p className="lede">A CKB wallet secured by ML-DSA-65. {restore ? "Restore it from your seed." : "Create one to begin."}</p>
       <form onSubmit={submit}>
         {restore && (
@@ -48,11 +48,11 @@ export function Create({ onCreated }: { onCreated: (w: WalletKeys, seedHex: stri
           </label>
         )}
         <label>
-          Passphrase
+          Password
           <input type="password" value={pass} onChange={(e) => setPass(e.target.value)} autoComplete="new-password" />
         </label>
         <label>
-          Repeat passphrase
+          Repeat password
           <input type="password" value={confirm} onChange={(e) => setConfirm(e.target.value)} autoComplete="new-password" />
         </label>
         {error && <p className="error">{error}</p>}
@@ -92,11 +92,11 @@ export function Unlock({ onUnlocked, onForget }: { onUnlocked: (w: WalletKeys) =
 
   return (
     <main className="narrow">
-      <h1>Lithium</h1>
-      <p className="lede">Enter your passphrase to unlock.</p>
+      <h1>Wave</h1>
+      <p className="lede">Enter your password to unlock.</p>
       <form onSubmit={submit}>
         <label>
-          Passphrase
+          Password
           <input type="password" value={pass} onChange={(e) => setPass(e.target.value)} autoFocus autoComplete="current-password" />
         </label>
         {error && <p className="error">{error}</p>}
